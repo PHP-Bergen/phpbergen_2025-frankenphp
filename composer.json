@@ -1,0 +1,33 @@
+{
+  "name": "phpbergen/frankenphp",
+  "description": "PHP talk about FrankenPHP",
+  "homepage": "https://github.com/PHP-Bergen/phpbergen_2025-frankenphp",
+  "authors": [
+    {
+      "name": "Stein Magne Bjørklund",
+      "email": "steinmb@smbjorklud.com"
+    }
+  ],
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.4",
+    "ext-curl": "*"
+  },
+  "config": {
+    "platform": {
+      "php": "8.4"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "\\phpbergen\\app\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Phpbergen\\Tests\\": "tests"
+    }
+  }
+}
