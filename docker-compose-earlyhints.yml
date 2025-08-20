@@ -1,0 +1,15 @@
+services:
+  frankenphp:
+    image: dunglas/frankenphp:latest
+    ports:
+      - "80:80"
+      - "443:443" # HTTPS
+      - "443:443/udp" # HTTP/3
+    volumes:
+      - .:/app
+      - ./Caddyfile-earlyhints:/etc/frankenphp/Caddyfile
+    working_dir: /app
+    environment:
+      FRANKENPHP_CONFIG: |
+        worker ./public/index.php
+    tty: true

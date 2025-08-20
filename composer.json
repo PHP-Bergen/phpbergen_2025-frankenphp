@@ -14,21 +14,35 @@
   "require": {
     "php": ">=8.4",
     "ext-curl": "*",
-    "ext-frankenphp": "*"
+    "ext-dom": "*",
+    "runtime/frankenphp-symfony": "dev-main",
+    "symfony/framework-bundle": "^7.3",
+    "symfony/http-foundation": "^7.3",
+    "symfony/http-kernel": "^7.3",
+    "symfony/web-link": "^7.3",
+    "symfony/yaml": "^7.3"
   },
   "config": {
     "platform": {
       "php": "8.4"
+    },
+    "allow-plugins": {
+      "symfony/runtime": true
     }
   },
   "autoload": {
     "psr-4": {
-      "\\phpbergen\\app\\": "src/"
+      "phpbergen\\app\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
       "Phpbergen\\Tests\\": "tests"
     }
+  },
+  "extra": {
+      "runtime": {
+          "class": "Runtime\\FrankenPhpSymfony\\Runtime"
+      }
   }
 }

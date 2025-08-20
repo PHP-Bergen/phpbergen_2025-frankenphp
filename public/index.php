@@ -1,13 +1,9 @@
 <?php
 
-use phpbergen\app\Bootstrap;
-use phpbergen\app\Render;
+use phpbergen\app\Kernel;
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload_runtime.php';
 
-$boot = new Bootstrap();
-$render = new Render();
-$page = $render->render('h1', 'Hello PHP Bergen');
-
-print ($page);
-
+return function (array $context) {
+    return new Kernel($context['APP_ENV'], (bool) $context['APP_DEBUG']);
+};
