@@ -2,7 +2,6 @@
 
 namespace phpbergen\app\Controller;
 
-use DOMDocument;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;

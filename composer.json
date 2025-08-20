@@ -14,7 +14,6 @@
   "require": {
     "php": ">=8.4",
     "ext-curl": "*",
-    "ext-dom": "*",
     "runtime/frankenphp-symfony": "dev-main",
     "symfony/framework-bundle": "^7.3",
     "symfony/http-foundation": "^7.3",
