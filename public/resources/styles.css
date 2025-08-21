@@ -18,7 +18,7 @@ body {
 }
 
 header .hero {
-  background-image: url('resources/hero-banner.jpg'); /* Ensure you have an image named hero-banner.jpg in your directory */
+  background-image: url('/resources/hero-banner.jpg'); /* Ensure you have an image named hero-banner.jpg in your directory */
   background-size: cover;
   background-position: center;
   color: white;

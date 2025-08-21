@@ -1,17 +1,28 @@
 {
+    auto_https {$AUTO_HTTPS:disable_redirects}
 	frankenphp {
 		worker /app/public/index.php
 	}
 }
 
-localhost {
-	log
+# Direct HTTPS access
+https://localhost {
+    log
+    encode zstd br gzip
+    root public/
 
-	encode zstd br gzip
+    php_server {
+        try_files {path} index.php
+    }
+}
 
-	root public/
+# HTTP access for Traefik
+http://localhost {
+    log
+    encode zstd br gzip
+    root public/
 
-	php_server {
-		try_files {path} index.php
-	}
+    php_server {
+        try_files {path} index.php
+    }
 }

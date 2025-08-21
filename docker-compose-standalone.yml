@@ -9,7 +9,4 @@ services:
       - .:/app
       - ./Caddyfile:/etc/frankenphp/Caddyfile
     working_dir: /app
-    environment:
-      FRANKENPHP_CONFIG: |
-        worker ./public/index.php
     tty: true

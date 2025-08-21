@@ -9,7 +9,7 @@ use Symfony\Component\WebLink\Link;
 
 class EarlyHintsController extends AbstractController
 {
-    #[Route("/early-hints")]
+    #[Route("/")]
     public function index(): Response
     {
         // Create links for the early hints.
