@@ -14,9 +14,9 @@ class EarlyHintsController extends AbstractController
     {
         // Create links for the early hints.
         $links= [
-            new Link('preload', '<resources/style.css')->withAttribute('as', 'style'),
-            new Link('preload', '<resources/hero-banner.jpg')->withAttribute('as', 'image'),
-            new Link('preload', '<https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap')->withAttribute('as', 'style'),
+            new Link('preload', 'resources/styles.css')->withAttribute('as', 'style'),
+            new Link('preload', 'resources/hero-banner.jpg')->withAttribute('as', 'image'),
+            new Link('preload', 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap')->withAttribute('as', 'style'),
         ];
 
         // Send the early hints.

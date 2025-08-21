@@ -7,7 +7,7 @@ services:
       - "443:443/udp" # HTTP/3
     volumes:
       - .:/app
-      - ./Caddyfile-earlyhints:/etc/frankenphp/Caddyfile
+      - ./Caddyfile:/etc/frankenphp/Caddyfile
     working_dir: /app
     environment:
       FRANKENPHP_CONFIG: |
