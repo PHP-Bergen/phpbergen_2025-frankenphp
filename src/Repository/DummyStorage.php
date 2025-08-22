@@ -1,6 +1,6 @@
 <?php
 
-namespace phpbergen\Repository;
+namespace phpbergen\app\Repository;
 
 readonly class DummyStorage implements Storage
 {

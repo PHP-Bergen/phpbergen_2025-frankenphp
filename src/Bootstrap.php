@@ -1,11 +1,11 @@
 <?php
 
-namespace phpbergen;
+namespace phpbergen\app;
 
-use phpbergen\Repository\DummyStorage;
-use phpbergen\Repository\Storage;
+use phpbergen\app\Repository\DummyStorage;
+use phpbergen\app\Repository\Storage;
 
-readonly class Boostrap {
+readonly class Bootstrap {
 
     public Storage $storage;
 

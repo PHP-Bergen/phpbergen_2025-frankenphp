@@ -1,6 +1,6 @@
 <?php
 
-namespace phpbergen\Repository;
+namespace phpbergen\app\Repository;
 
 interface Storage
 {

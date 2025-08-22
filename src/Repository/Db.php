@@ -1,6 +1,6 @@
 <?php
 
-namespace phpbergen\Repository;
+namespace phpbergen\app\Repository;
 
 class Db {
     public function __construct(private \Storage $storage)
