@@ -11,6 +11,7 @@ readonly class Bootstrap {
 
     public function __construct()
     {
+        sleep(1);
         $this->storage = new DummyStorage([1, 2, 3]);
     }
 }
