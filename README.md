@@ -1,5 +1,7 @@
 # FrankenPHP - PHP Bergen
 
+![FrankenPHP](docs/images/frankenphp.png)
+
 ## FrankenPHP - 
 
 The slides are located in [docs](docs/markdown/README.md)
