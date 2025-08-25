@@ -13,7 +13,8 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=8.4",
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "ext-frankenphp": "*"
   },
   "config": {
     "platform": {
