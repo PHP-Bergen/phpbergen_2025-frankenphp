@@ -1,0 +1,47 @@
+services:
+  # Reverse proxy / load balancer
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    command:
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.websecure.http.tls=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      # Logging
+      - "--log.level=DEBUG"
+      - "--accesslog=true"
+    ports:
+      - "80:80"
+      - "443:443" # HTTPS
+      - "443:443/udp" # HTTP/3
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    networks:
+      - frankenphp
+
+  # FrankenPHP app service
+  frankenphp:
+    image: dunglas/frankenphp
+    deploy:
+      replicas: 3
+    volumes:
+      - .:/app
+      - ./Caddyfile:/etc/frankenphp/Caddyfile
+    working_dir: /app
+    tty: true
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=frankenphp"
+      - "traefik.http.routers.frankenphp.entrypoints=web,websecure"
+      - "traefik.http.routers.frankenphp.rule=Host(`localhost`)"
+      - "traefik.http.routers.frankenphp.tls=true"
+      - "traefik.http.services.frankenphp.loadbalancer.server.port=80"
+    networks:
+      - frankenphp
+
+networks:
+  frankenphp:
+    name: "frankenphp"
+    driver: bridge

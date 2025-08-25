@@ -10,4 +10,3 @@ $render = new Render();
 $page = $render->render('h1', 'Hello PHP Bergen');
 
 print ($page);
-
