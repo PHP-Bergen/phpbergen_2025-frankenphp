@@ -14,4 +14,14 @@ readonly class Bootstrap {
         sleep(1);
         $this->storage = new DummyStorage([1, 2, 3]);
     }
+
+    public function handle(... $globals): string
+    {
+        return "Hello World! " . var_dump($globals);
+    }
+
+    public function terminate() {}
+
+    public function shutdown() {}
+
 }
