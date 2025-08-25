@@ -1,7 +1,7 @@
 {
     auto_https {$AUTO_HTTPS:disable_redirects}
 	frankenphp {
-		worker /app/public/index.php
+		worker /app/public/index103.php
 	}
 }
 
@@ -12,7 +12,7 @@ https://localhost {
     root public/
 
     php_server {
-        try_files {path} index.php
+        try_files {path} index103.php
     }
 }
 
@@ -23,6 +23,6 @@ http://localhost {
     root public/
 
     php_server {
-        try_files {path} index.php
+        try_files {path} index103.php
     }
 }
