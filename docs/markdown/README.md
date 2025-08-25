@@ -10,4 +10,4 @@
 
 ## [Scaling FrankenPHP](scaling.md)
 
-## The future
+## [The future](the_feature.md)
