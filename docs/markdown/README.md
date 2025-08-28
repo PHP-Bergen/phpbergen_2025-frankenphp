@@ -1,6 +1,6 @@
 # PHP Bergen - FrankenPHP
 
-<img src="../images/php-bergen-logo.jpg" alt="PHP-Bergen" width="100" /><img src="../images/frankenphp.png" alt="FrankenPHP" height="120" />
+<img src="../images/php-bergen-logo.jpg" alt="PHP-Bergen" width="100" />  <img src="../images/frankenphp.png" alt="FrankenPHP" height="100" />
 
 ## [Why](why.md)
 
