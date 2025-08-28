@@ -12,6 +12,8 @@
 
 ## [Scaling FrankenPHP](scaling.md)
 
+## [Worker mode](worker_mode.md)
+
 ## [The future](the_feature.md)
 
 ---
