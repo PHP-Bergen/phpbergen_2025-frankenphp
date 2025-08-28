@@ -2,13 +2,14 @@
 
 <img src="docs/images/frankenphp.png" alt="FrankenPHP" width="300" />
 
-## FrankenPHP - 
+## Slide deck 
 
-The slides are located in [docs](docs/markdown/README.md)
+Nerdy slides are located in [docs](docs/markdown/README.md)
 
 ## References
 
 * FrankenPHP - https://frankenphp.dev/
+* [The PHP Foundation](https://thephp.foundation/blog)
 * PHP Bergen git repos can be found at https://github.com/PHP-Bergen
 * PHP Bergen home page: https://phpbergen.no
 
