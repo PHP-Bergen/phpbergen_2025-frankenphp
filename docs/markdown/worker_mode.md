@@ -23,5 +23,18 @@ Clears out superglobals to prevent
 /public_worker/index.php
 ```
 
+## Local dev in worker mode useless?
+
+* Worker scripts are started at the same time as the web server
+* They run forever
+* If a file change (PHP file, Twig template, config...)
+  * nothing happens
+  * the worker script keeps running
+* Worker mode is useless in dev
+
+### The solution - watch
+
+<img src="../images/worker_local_dev.png" width="600" alt="Watch mode">
+
 ---
 <img src="../images/elephant_footer.svg" alt="FrankenPHP" width="100" height="100" />

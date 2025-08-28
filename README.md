@@ -8,6 +8,7 @@ Nerdy slides are located in [docs](docs/markdown/README.md)
 
 ## References
 
+* These slides repo - https://github.com/PHP-Bergen/phpbergen_2025-frankenphp/
 * FrankenPHP - https://frankenphp.dev/
 * [The PHP Foundation](https://thephp.foundation/blog)
 * [Static CLI Binary](https://static-php.dev/en/)
