@@ -7,7 +7,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $boot = new Bootstrap();
 $render = new Render();
-$page = $render->render('h1', 'Hello PHP Bergen in worker mode');
+//$page = $render->render('h1', 'Hello PHP Bergen in worker mode');
 
 // Prevent the worker from stopping if the client disconnects
 ignore_user_abort(true);
@@ -18,10 +18,11 @@ $pid = getmypid();
 $requestCount = 0;
 
 // The per-request handler (superglobals reset each request)
-$handler = static function () use (&$requestCount, $pid, $startedAt, $page) {
+$handler = static function () use (&$requestCount, $pid, $startedAt, $render) {
   $requestCount++;
   header('Content-Type: text/html; charset=utf-8');
-  echo $page;
+
+  echo $render->render('h1', 'Hello PHP Bergen in worker mode');
   echo '<pre>';
   echo 'PID: ' . $pid . "\n";
   echo 'Request count: ' . $requestCount . "\n";
