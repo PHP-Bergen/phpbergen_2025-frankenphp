@@ -7,7 +7,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $boot = new Bootstrap();
 $render = new Render();
-//$page = $render->render('h1', 'Hello PHP Bergen in worker mode');
 
 // Prevent the worker from stopping if the client disconnects
 ignore_user_abort(true);
