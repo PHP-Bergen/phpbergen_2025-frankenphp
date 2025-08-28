@@ -10,6 +10,7 @@ Nerdy slides are located in [docs](docs/markdown/README.md)
 
 * FrankenPHP - https://frankenphp.dev/
 * [The PHP Foundation](https://thephp.foundation/blog)
+* [Static CLI Binary](https://static-php.dev/en/)
 * PHP Bergen git repos can be found at https://github.com/PHP-Bergen
 * PHP Bergen home page: https://phpbergen.no
 
