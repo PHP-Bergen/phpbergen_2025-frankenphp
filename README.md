@@ -1,6 +1,6 @@
 # FrankenPHP - PHP Bergen
 
-![FrankenPHP](docs/images/frankenphp.png)
+<img src="docs/images/frankenphp.png" alt="FrankenPHP" width="300" />
 
 ## FrankenPHP - 
 
