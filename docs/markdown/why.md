@@ -3,8 +3,6 @@
 FrankenPHP is a modern app server for PHP written in Go, built on top of Caddy and bundling a PHP runtime. It is an alternative Server API
 (SAPI) for PHP that is built on the Caddy web server, and includes a number of high-performance configuration options. No needs to install PHP separately.
 
-<img src="../images/caddy-plus-php.png" alt="FrankenPHP" width="236" />
-
 ## FrankenPHP moving under the PHP GitHub organization
 
 The PHP Foundation has decided to directly support the FrankenPHP project moving forward.
