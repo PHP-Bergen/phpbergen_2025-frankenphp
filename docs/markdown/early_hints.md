@@ -44,6 +44,10 @@ Open https://localhost/ in your browser, open the network tab in the developer t
 
 **Note:** Browsers utilize local cache for 103 Early Hints so you need to ensure "disable caching" is NOT enabled in your browser!
 
+## Largest Contentful Paint (LPC) improvement on about 30%
+
+<img src="../images/lpc.png" height="300" alt="LPC test">
+
 ### Resources
 
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/103
