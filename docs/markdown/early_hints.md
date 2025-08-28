@@ -1,4 +1,4 @@
-# HTTP 103 Early Hints
+# <img src="../images/bulb.svg" height="35"> HTTP 103 Early Hints
 
 A modern way to make web pages load faster.
 FrankenPHP support this feature both in classic and worker mode.
@@ -20,7 +20,7 @@ The browser can start downloading the resources before the final response is rec
 4. Browser starts fetching these resources immediately.
 5. Server finishes preparing → sends 200 OK with content.
 
-![early hints](../images/103.png)
+<img src="../images/103.png" height="300">
 
 ### Example Headers
 ```shell

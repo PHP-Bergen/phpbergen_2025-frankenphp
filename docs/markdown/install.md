@@ -1,4 +1,4 @@
-# Install FrankenPHP
+# <img src="../images/box.svg" height="30"> FrankenPHP
 
 Local installation with a static binary.
 

@@ -1,5 +1,7 @@
 # PHP Bergen - FrankenPHP
 
+<img src="../images/php-bergen-logo.jpg" alt="PHP-Bergen" width="100" /><img src="../images/frankenphp.png" alt="FrankenPHP" height="120" />
+
 ## [Why](why.md)
 
 ## [How to Install](install.md)
