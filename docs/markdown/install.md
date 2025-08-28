@@ -31,3 +31,5 @@ docker run -t --rm -v $PWD:/app -p 80:80 -p 443:443 -p 443:443/udp --tty dunglas
 ```bash
 docker run -it --rm -v $PWD:/app dunglas/frankenphp frankenphp php-cli script.php
 ```
+---
+<img src="../images/elephant_footer.svg" alt="FrankenPHP" width="100" height="100" />

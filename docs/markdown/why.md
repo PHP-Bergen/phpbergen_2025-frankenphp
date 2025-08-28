@@ -6,3 +6,6 @@ Operating in classic mode, FrankenPHP can be a drop-in replacement for PHP-FPM t
 In worker mode, Boot your application once and keep it in memory. FrankenPHP will handle incoming requests in a few milliseconds.
 
 In either mode, FrankenPHP reduces complexity and overhead previously experienced with running a webserver, FastCGI and php-fpm by providing a single binary that can be deployed anywhere.
+
+---
+<img src="../images/elephant_footer.svg" alt="FrankenPHP" width="100" height="100" />
