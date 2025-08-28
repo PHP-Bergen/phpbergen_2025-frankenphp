@@ -5,7 +5,7 @@ FrankenPHP is a modern app server for PHP written in Go, built on top of Caddy a
 
 ## FrankenPHP moving under the PHP GitHub organization
 
-The PHP Foundation has decided to directly support the FrankenPHP project moving forward.
+The PHP Foundation has [decided to directly support the FrankenPHP project](https://thephp.foundation/blog/2025/05/15/frankenphp/) moving forward.
 
 <img src="../images/php-fondation-1024x569.webp" alt="FrankenPHP" width="1024">
 
