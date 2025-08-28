@@ -1,6 +1,6 @@
 # <img src="../images/box.svg" height="30"> FrankenPHP
 
-Local installation with a static binary.
+## Local installation with a static binary.
 
 ```bash
 curl https://frankenphp.dev/install.sh | sh
