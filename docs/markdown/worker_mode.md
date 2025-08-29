@@ -20,7 +20,8 @@ Clears out superglobals to prevent
 ## Example application runnig in worker mode
 
 ```
-/public_worker/index.php
+cd public_worker/index.php
+../bin/frankenphp php-server --worker index.php
 ```
 
 ## Local dev in worker mode useless?
