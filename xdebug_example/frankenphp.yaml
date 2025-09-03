@@ -1,0 +1,5 @@
+app:
+  script: /app/public/index.php
+  preload: true
+php:
+  config: /app/php.ini
